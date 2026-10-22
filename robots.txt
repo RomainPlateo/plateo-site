@@ -1,0 +1,7 @@
+# Plateo — www.plateo.fr
+# Tous les robots sont autorisés, y compris ceux des moteurs de recherche et des IA
+# (Googlebot, Bingbot, GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, Google-Extended…).
+User-agent: *
+Allow: /
+
+Sitemap: https://www.plateo.fr/sitemap.xml

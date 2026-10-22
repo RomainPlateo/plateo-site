@@ -1,0 +1,30 @@
+# Plateo
+
+> Plateo est un service de coordination de travaux pour les mandataires judiciaires à la protection des majeurs (MJPM : tuteurs, curateurs, associations tutélaires, préposés d'établissements). Basée à Marseille, Plateo gère les travaux chez les majeurs protégés de A à Z, de la réception du besoin jusqu'à l'intervention, partout en France.
+
+Chiffres clés : plus de 90 artisans partenaires ; plus de 800 interventions et plus de 400 bénéficiaires en 2025.
+
+## Services
+
+- [Accompagnement Travaux](https://www.plateo.fr/accompagnement-travaux-plateo) : accompagnement indépendant, comme un maître d'œuvre, pour ne réaliser que les travaux nécessaires (rénovation énergétique, remise en état en fin de bail ou entre deux locataires, adaptation du logement). Disponible dans toute la France.
+- [Audit Sécurité / Salubrité](https://www.plateo.fr/audit-securite-salubrite) : diagnostic du logement d'un majeur protégé, centré sur la sécurité et la salubrité, pour protéger la responsabilité du MJPM. Disponible dans toute la France.
+- [Dépannages](https://www.plateo.fr/les-specialites#depannages) : plomberie, électricité, serrurerie, chauffage, à prix forfaitaires, dans certains départements.
+- [Travaux sur devis](https://www.plateo.fr/les-specialites#tous-les-travaux-courants) : travaux dans toutes les spécialités, dans certains départements.
+
+## Corps d'état (page « Les Spécialités » : https://www.plateo.fr/les-specialites)
+
+- [Espaces extérieurs](https://www.plateo.fr/les-specialites#espaces-exterieurs)
+- [Adaptation des logements](https://www.plateo.fr/les-specialites#adaptation-des-logements)
+- [Nettoyage et désinsectisation](https://www.plateo.fr/les-specialites#nettoyage-et-desinsectisation)
+- [Remise en état](https://www.plateo.fr/les-specialites#remise-en-etat)
+
+## Ressources
+
+- [Livres blancs gratuits pour les MJPM](https://www.plateo.fr/ressources) : urgences, logement sécurisé et décent, propriétaire/locataire, conformité administrative.
+
+## En savoir plus
+
+- [À propos de Plateo](https://www.plateo.fr/a-propos)
+- [Le média : articles pour les MJPM](https://www.plateo.fr/media/)
+- [Réalisations](https://www.plateo.fr/projets)
+- Contact : contact@plateo.fr, 07 78 24 27 75

@@ -1,0 +1,144 @@
+{
+  "slug": "a-propos",
+  "title": "À propos de Plateo : coordination de travaux pour les MJPM | Plateo",
+  "description": "Créée à Marseille par deux ingénieurs du BTP, Plateo coordonne les travaux chez les majeurs protégés pour les MJPM. Histoire, valeurs et équipe.",
+  "h1": "Notre expertise au service des MJPM et de leurs bénéficiaires",
+  "intro": [
+    "Chaque Majeur Protégé a le droit de vivre dans un logement salubre et entretenu.",
+    "Plateo est un service de coordination de travaux créé à Marseille par deux ingénieurs du BTP, dédié exclusivement aux MJPM et aux Majeurs Protégés."
+  ],
+  "photo_fondateurs": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/6409f09f8120f6cc2065f038_Plateo_fondateurs.png",
+  "chiffres": [
+    [
+      "2020",
+      "Création, à Marseille"
+    ],
+    [
+      "90+",
+      "Artisans partenaires"
+    ],
+    [
+      "800+",
+      "Interventions en 2025"
+    ],
+    [
+      "400+",
+      "Bénéficiaires en 2025"
+    ]
+  ],
+  "recit": [
+    {
+      "eyebrow": "Histoire",
+      "titre": "La genèse",
+      "image": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/66557cdfc8c42ff9d3c471cb_Group%209%20%281%29-min.png",
+      "alt": "Un monsieur sous tutelle dans son jardin",
+      "texte": [
+        "Plateo a été créé par 2 ingénieurs BTP de formation (Polytech Marseille). Nos expériences dans des bureaux d'études nous ont permis de développer notre expertise en travaux, en collaborant sur des projets variés.",
+        "Suite à une rencontre avec un MJPM, nous avons compris les problématiques rencontrées par ces professionnels lorsqu'il faut entreprendre des travaux dans les logements des Majeurs Protégés.",
+        "Naturellement, nous nous sommes spécialisés dans les travaux pour les personnes disposant d'une mesure de protection.",
+        "Aujourd'hui, nous proposons notre service uniquement aux MJPM et aux Majeurs Protégés.",
+        "Notre mission est de transformer radicalement l'expérience des travaux de rénovation et d'entretien, en garantissant un environnement sain et sécurisé pour les Majeurs Protégés."
+      ]
+    },
+    {
+      "eyebrow": "Mission",
+      "titre": "Transformer l'expérience des travaux",
+      "image": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/66558019cd87d63040d835d5_Group%2010-min.png",
+      "alt": "Une personne âgée en chemise",
+      "texte": [
+        "Nous comprenons que les Mandataires Judiciaires à la Protection des Majeurs ont des missions très variées, regroupant plusieurs domaines d'expertise.",
+        "Les MJPM sont entourés de divers prestataires historiques : avocats, banques, assurances, gestionnaires de patrimoines, agences immobilières...",
+        "Cependant, il n'y a pas d'équivalent pour les travaux dans les logements.",
+        "Ces missions prennent un temps considérable et sont souvent sources de frustrations.",
+        "Nous offrons donc un accompagnement personnalisé et transparent."
+      ]
+    },
+    {
+      "eyebrow": "Promesse",
+      "titre": "Un service travaux de A à Z",
+      "image": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/66558358bd678e076cf71f9e_Group%2012-min.png",
+      "alt": "Une dame dans son salon",
+      "texte": [
+        "La promesse de Plateo est simple : vous apporter sérénité et gain de temps, en gérant les travaux de A à Z, de l'analyse des besoins jusqu'à l'intervention finale.",
+        "Nous vous informons à chaque étape, sur la planification des travaux, l'avancement et les coûts associés.",
+        "Plateo est un interlocuteur unique, qui collabore avec des artisans du BTP.",
+        "Spécialistes des interventions chez les Majeurs Protégés, nous souhaitons mettre notre expertise à disposition des acteurs de la protection des majeurs."
+      ]
+    }
+  ],
+  "valeurs": [
+    [
+      "Confiance",
+      "Nos artisans sont qualifiés et sensibilisés à l'intervention auprès de personnes vulnérables."
+    ],
+    [
+      "Expertise BTP",
+      "Chaque chantier est encadré, et vous êtes informé à chaque étape."
+    ],
+    [
+      "Solidarité",
+      "Nous respectons l'engagement des professionnels de la protection et les besoins de leurs bénéficiaires."
+    ]
+  ],
+  "equipe": [
+    {
+      "nom": "Romain Cordier",
+      "role": "Président",
+      "photo": "assets/img/webflow/profile-pic-3-.webp",
+      "citation": "En découvrant les difficultés des mandataires face aux travaux chez leurs bénéficiaires, j'ai voulu comprendre leurs besoins et y apporter une réponse adaptée.",
+      "experiences": [
+        "Ingénieur génie civil – Polytech Marseille",
+        "Maître d'œuvre – Bureau d'études tous corps d'état"
+      ]
+    },
+    {
+      "nom": "Raphaël Wieruszewski",
+      "role": "Directeur technique",
+      "photo": "assets/img/webflow/profile-pic-2-.webp",
+      "citation": "J'ai rejoint Plateo par conviction, pour mettre mon expertise technique au service d'un projet utile socialement.",
+      "experiences": [
+        "Ingénieur génie civil – Polytech Marseille",
+        "Maître d'œuvre – Bureaux d'études tous corps d'état"
+      ]
+    },
+    {
+      "nom": "Elise Boureau",
+      "role": "Coordinatrice des opérations",
+      "photo": "assets/img/webflow/profile-pic-4-.webp",
+      "citation": "Contribuer au bien-être d'un public vulnérable et méconnu, en prenant soin de son logement et de son cadre de vie.",
+      "experiences": [
+        "CAP Ébéniste d'art",
+        "Responsable de magasin – Matériaux de construction"
+      ]
+    }
+  ],
+  "faq": [
+    [
+      "Qui facture les prestations ?",
+      [
+        "Les prestations d'accompagnement et d'étude sont facturées par Plateo.",
+        "Les petits travaux, proposés dans certains départements et ne relevant pas de la garantie décennale, peuvent être facturés directement au bénéficiaire. Pour les travaux couverts par la garantie décennale, c'est l'entreprise qui facture au nom du bénéficiaire : son assurance couvre alors l'ouvrage pendant dix ans."
+      ]
+    ],
+    [
+      "Comment Plateo est-elle financée ?",
+      [
+        "Plateo ne reçoit aucune subvention publique : le service est financé uniquement par ses utilisateurs.",
+        "Dans le cadre de l'ESS (Économie Sociale et Solidaire), nous appliquons une politique de faibles marges pour ne pas impacter les bénéficiaires les plus précaires.",
+        "Plateo est une société commerciale. Nous avons fait le choix de ne pas dépendre de subventions ou autres financements pour assurer une continuité du service sur le long terme."
+      ]
+    ],
+    [
+      "Quels sont les délais d'intervention ?",
+      [
+        "Ils dépendent de la nature du problème et de la disponibilité des artisans. Nous nous engageons à vous communiquer les disponibilités le plus rapidement possible."
+      ]
+    ],
+    [
+      "Quels sont nos engagements ?",
+      [
+        "Des prestations de qualité, des délais respectés, un suivi avant et après les travaux, une communication claire, le respect des normes de sécurité, et des devis clairs et détaillés."
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "_note": "FAQ commune à l'accueil et à la page Les Spécialités. Les réponses peuvent contenir des liens HTML.",
+  "faq": [
+    {
+      "question": "Qu'est-ce que Plateo ?",
+      "reponse_html": [
+        "Plateo est un service de coordination de travaux pour les Mandataires Judiciaires à la Protection des Majeurs (MJPM) : associations tutélaires, MJPM indépendants et préposés d'établissements.",
+        "Basée à Marseille, Plateo prend en charge les travaux chez les Majeurs Protégés de A à Z, de la réception du besoin jusqu'à l'intervention."
+      ]
+    },
+    {
+      "question": "Dans quelles zones intervenez-vous ?",
+      "reponse_html": [
+        "L'Accompagnement Travaux et l'Audit Sécurité / Salubrité sont disponibles partout en France, grâce à des partenaires locaux qui suivent la même procédure.",
+        "Les dépannages et les travaux sur devis sont proposés dans certains départements : contactez-nous pour vérifier votre secteur."
+      ]
+    },
+    {
+      "question": "Quelle différence avec faire appel directement à des artisans ?",
+      "reponse_html": [
+        "Plateo étudie et coordonne les travaux, les artisans les réalisent : ce n'est pas le même métier.",
+        "Vous sollicitez un interlocuteur unique, qui traite chaque demande avec une attention particulière.",
+        "Vous recevez une analyse et des devis comparables, qui permettent au MJPM de rester maître de chaque situation."
+      ]
+    },
+    {
+      "question": "Pourquoi faire un Accompagnement Travaux ?",
+      "reponse_html": [
+        "Pour les projets d'ampleur ou complexes, l'<a href=\"accompagnement-travaux-plateo\">Accompagnement Travaux</a> apporte un regard indépendant pour ne réaliser que les travaux nécessaires et réduire les dépenses du Majeur Protégé.",
+        "Il comprend une visite sur place et une liste de travaux détaillée, puis, en option, la consultation des entreprises, le suivi du chantier et la réception des travaux."
+      ]
+    },
+    {
+      "question": "Pourquoi faire un Audit Sécurité / Salubrité ?",
+      "reponse_html": [
+        "L'<a href=\"audit-securite-salubrite\">audit</a> vérifie uniquement les points essentiels de sécurité (gaz, électricité, détecteurs) et de salubrité du logement. Il protège la responsabilité du MJPM et fournit une attestation, ainsi qu'un plan de travaux si des non-conformités sont relevées."
+      ]
+    },
+    {
+      "question": "Comment faire une demande de travaux ?",
+      "reponse_html": [
+        "Remplissez le <a href=\"https://tally.so/r/3y695p\" target=\"_blank\" rel=\"noopener\">formulaire de demande en ligne</a> en quelques minutes, ou contactez-nous par e-mail à <a href=\"mailto:contact@plateo.fr\">contact@plateo.fr</a> ou par téléphone au <a href=\"tel:+33778242775\">07 78 24 27 75</a>. Nous revenons vers vous pour organiser la suite."
+      ]
+    }
+  ]
+}

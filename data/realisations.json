@@ -1,0 +1,278 @@
+{
+  "_note": "Réalisations (page /projets et fiches /projects/<slug>). Champs modifiables : specialite (ancre de la page Les Spécialités), client, texte, masquer.",
+  "realisations": [
+    {
+      "slug": "adaptation-dune-salle-de-bains",
+      "specialite": "adaptation-des-logements",
+      "titre": "Adaptation d'une salle de bains",
+      "client": "Préposé d'établissement",
+      "image": "https://cdn.prod.website-files.com/63a160fdd6b229a9544ebec0/667bcc60e71af9888d9c10a1_Before%20after%20minimal%20skincare%20Instagram%20post%20%281%29-min.png",
+      "date": "2024-10-09"
+    },
+    {
+      "slug": "remise-en-etat-avant-vente",
+      "specialite": "remise-en-etat",
+      "titre": "Remise en état avant vente",
+      "client": "MJPM indépendant",
+      "image": "https://cdn.prod.website-files.com/63a160fdd6b229a9544ebec0/667bcd25f37a6c0abb5d4633_Before%20after%20minimal%20skincare%20Instagram%20post%20%283%29-min.png",
+      "date": "2024-10-09"
+    },
+    {
+      "slug": "renovation-dune-toiture",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Rénovation d'une toiture",
+      "client": "Association tutélaire",
+      "image": "https://cdn.prod.website-files.com/63a160fdd6b229a9544ebec0/667bcd93a4ab7fd5370f1a16_Before%20after%20minimal%20skincare%20Instagram%20post%20%284%29-min.png",
+      "date": "2024-10-09"
+    },
+    {
+      "slug": "renovation-energetique",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Rénovation énergétique",
+      "client": "Association tutélaire",
+      "image": "https://cdn.prod.website-files.com/63a160fdd6b229a9544ebec0/667bcb15c21784176262a408_Before%20after%20minimal%20skincare%20Instagram%20post%20%282%29-min.png",
+      "date": "2024-10-09"
+    },
+    {
+      "slug": "debouchage-dun-lavabo",
+      "specialite": "depannages",
+      "titre": "Débouchage d'un lavabo",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64550bff3199d6b3b3e24ae0_D%C3%A9bouchage%20lavabo.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "mise-en-peinture-suite-a-un-degat-des-eaux",
+      "specialite": "remise-en-etat",
+      "titre": "Mise en peinture suite à un dégât des eaux",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64550d4730b5645ca0b46dd6_Mise%20en%20peinture%20suite%20%C3%A0%20un%20d%C3%A9gat%20des%20eaux.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "nettoyage-diogene",
+      "specialite": "nettoyage-et-desinsectisation",
+      "titre": "Nettoyage diogène",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64550c4056f0086a32961652_Nettoyage%20diogene.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "remise-en-etat-dun-logement",
+      "specialite": "remise-en-etat",
+      "titre": "Remise en état d'un logement",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64550d7471452db16bb7fa98_Remise%20en%20%C3%A9tat.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "remplacement-meuble-vasque-de-salle-de-bains",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'un meuble vasque de salle de bain",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64550c1ea503e33e2e3d7e8b_Remplacement%20meuble%20SDB.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "remplacement-dune-fenetre",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'une porte fenêtre",
+      "client": "Autre",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/6455081dfdd20cebc01a3736_Test-porte%20fenetre%20.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "remplacement-dune-serrure",
+      "specialite": "depannages",
+      "titre": "Remplacement d'une serrure",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/645509f692098016cecd4986_Remplacement-serrure2.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "remplacement-dune-serrure-2",
+      "specialite": "depannages",
+      "titre": "Remplacement d'une serrure",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/645509e75046c5194bafd54c_Remplacement-serrure.png",
+      "date": "2023-05-05"
+    },
+    {
+      "slug": "adaptation-de-logement",
+      "specialite": "adaptation-des-logements",
+      "titre": "Adaptation d'une douche",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7010fd3992ffb82cc69c_AT%20-%20Installation%20d%27un%20si%C3%A8ge%20de%20douche%20escamotable%20et%20d%27une%20barre%20de%20maintien.JPG",
+      "date": "2023-05-02",
+      "texte": "Installation d'un siège de douche escamotable et d'une barre de maintien"
+    },
+    {
+      "slug": "amenagement-terrain",
+      "specialite": "espaces-exterieurs",
+      "titre": "Aménagement d'un terrain",
+      "client": "Autre",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64493ac8cba473609b6d4a9e_Autre%20-%20Am%C3%A9nagement%20terrain.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "debarrassage-complet-dun-logement",
+      "specialite": "nettoyage-et-desinsectisation",
+      "titre": "Débarrassage complet d'un logement",
+      "client": "Préposé d'établissement",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a72e9ac1fa10ea6821e91_Pr%C3%A9pos%C3%A9%20d%27%C3%A9tablissement%20-%20D%C3%A9barrassage%20complet%20d%27un%20logement.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "debarrassage-dun-logement",
+      "specialite": "nettoyage-et-desinsectisation",
+      "titre": "Débarrassage d'un logement",
+      "client": "Préposé d'établissement",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a6fa72bf8520c48694f37_Pr%C3%A9pos%C3%A9%20d%27%C3%A9tablissement%20-%20D%C3%A9barrassage%20d%27un%20logement.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "entretien-dun-jardin",
+      "specialite": "espaces-exterieurs",
+      "titre": "Entretien d'un jardin",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a73fc4086ee3e040b0f6c_MJPMi%20-%20Entretien%20d%27un%20jardin.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "mise-en-peinture-dune-chambre",
+      "specialite": "remise-en-etat",
+      "titre": "Mise en peinture d'une chambre",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a74bf95b69464b6fa246d_AT%20-%20Mise%20en%20peinture%20d%27une%20chambre.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "mise-en-peinture-dune-chambre-2",
+      "specialite": "remise-en-etat",
+      "titre": "Mise en peinture d'une chambre",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a753f2015f9b1b86e2a44_AT%20-%20Mise%20en%20peinture%20d%27une%20chambre%20%281%29.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "mise-en-peinture-dune-salle-de-bains-jpg",
+      "specialite": "remise-en-etat",
+      "titre": "Mise en peinture d'une salle de bain",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a742b537e5d58b3e072fb_AT%20-%20Mise%20en%20peinture%20d%27une%20salle%20de%20bains.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remise-en-etat-dun-caniveau",
+      "specialite": "espaces-exterieurs",
+      "titre": "Remise en état d'un caniveau",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7c519984b83c4711240b_MJPMi%20-%20Remise%20en%20%C3%A9tat%20d%27un%20caniveau.png",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-radiateur",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'un radiateur",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7d3b45d8976a61f39c22_AT%20Remplacement%20radiateur.png",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-radiateur-2",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'un radiateur",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7da600cecb5ca7e23997_MJPMi%20-%20Remplacement%20radiateur.png",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-dun-volet-roulant",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'un volet roulant",
+      "client": "Autre",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/64510d0e2027a84c6bf30cbd_Remplacement%20volet%20roulant%202.jpeg",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-clime",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'une climatisation",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7cf49ae6681961842edf_AT%20Remplacement%20clime.png",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-plaque-de-cuisson-au-gaz",
+      "specialite": "adaptation-des-logements",
+      "titre": "Remplacement d'une plaque de cuisson au gaz",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7d6bae783315cebe9ca0_MJPM%20Remplacement%20plaque%20de%20cuisson.png",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-porte-dentree",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'une porte d'entrée",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7450b8f7613dd6986985_AT%20-%20Remplacement%20porte%20d%27entr%C3%A9e.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-simple-vitrage-3",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'une vitre simple",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a73c9112e2b7874ff77bf_MJPMi%20-%20Remplacement%20simple%20vitrage.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-simple-vitrage",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'une vitre simple",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a72bc9865c27b1a84e80d_AT%20-%20Remplacement%20simple%20vitrage.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "remplacement-simple-vitrage-2",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Remplacement d'une vitre simple",
+      "client": "Coordinateur de parcours complexe",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a732d4c1dcb8130423cd9_Coordo%20parcours%20complexe%20-%20Remplacement%20simple%20vitrage.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "realisation-dun-doublage-isolant",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Réalisation d'un doublage isolant",
+      "client": "Autre",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a7cad45a7122ff64ef9ff_Autre%20-%20R%C3%A9alisation%20d%27une%20doublage%20isolant%201.png",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "reparation-volet-bois",
+      "specialite": "tous-les-travaux-courants",
+      "titre": "Réparation d'un volet en bois",
+      "client": "Association tutélaire",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a74928b3c5a3268bc531e_AT%20-%20R%C3%A9paration%20volet%20bois.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "taille-dune-haie",
+      "specialite": "espaces-exterieurs",
+      "titre": "Taille d'une haie",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644a6f3cb26a215300f9e596_MJPMi%20-%20Taille%20d%27une%20haie.JPG",
+      "date": "2023-05-02"
+    },
+    {
+      "slug": "elagage-dun-cypres",
+      "specialite": "espaces-exterieurs",
+      "titre": "Élagage d'un cyprès",
+      "client": "MJPM indépendant",
+      "image": "https://uploads-ssl.webflow.com/63a160fdd6b229a9544ebec0/644938a09d52ab5d30ea24b8_MJPMi%20-%20%C3%89lagage%20d%27un%20cypr%C3%A8s.JPG",
+      "date": "2023-05-02"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "slug": "audit-securite-salubrite",
+  "nom": "L'Audit Sécurité / Salubrité",
+  "service_type": "Audit de sécurité et de salubrité du logement",
+  "title": "Audit Sécurité / Salubrité du logement des majeurs protégés | Plateo",
+  "description": "Un audit du logement d'un majeur protégé par un diagnostiqueur certifié : sécurité (gaz, électricité, détecteurs) et salubrité, pour protéger la responsabilité du MJPM.",
+  "eyebrow": "Pour les MJPM et les Majeurs Protégés",
+  "h1": "L'Audit Sécurité / Salubrité",
+  "intro": [
+    "Un audit du logement pour vérifier uniquement la sécurité et la salubrité. Pour maîtriser la situation et protéger la responsabilité du MJPM.",
+    "Selon une procédure de diagnostic spécifiquement établie pour les logements des Majeurs Protégés."
+  ],
+  "badge": "Service disponible sur toute la France",
+  "image": "assets/img/webflow/group-7-min.webp",
+  "image_alt": "Une femme qui bénéficie d'une curatelle simple",
+  "cta_bouton": "Vérifier les logements",
+  "deroule_eyebrow": "Les points vérifiés",
+  "etude_titre": "Vérification de la sécurité et de la salubrité du logement",
+  "etude_intro": "Par des diagnostiqueurs certifiés, selon une procédure spécifique.",
+  "etude_paragraphes": [
+    "Ce service permet d’obtenir un audit du logement d’un Majeur Protégé, pour vérifier la sécurité et la salubrité de celui-ci et protéger la responsabilité du MJPM.",
+    "La procédure se concentre uniquement sur les points primordiaux pour la sécurité et la salubrité. Il ne s’agit pas de proposer une remise aux normes complète."
+  ],
+  "etapes": [
+    {
+      "titre": "La sécurité",
+      "option": false,
+      "html": [
+        "Vérifier les équipements qui peuvent présenter des dangers :",
+        "<ul><li>Diagnostic gaz selon la norme NF P 45-500 : sécurité</li><li>Vérifier la date de péremption des flexibles</li><li>Diagnostic électricité selon la norme NF C 16-600</li></ul>",
+        "Vérifier la présence et la conformité :",
+        "<ul><li>Des détecteurs de fumée et de monoxyde de carbone</li><li>D’une cheminée ou d’un poêle</li><li>Des entretiens annuels obligatoires (chaudière gaz notamment)</li></ul>"
+      ]
+    },
+    {
+      "titre": "La salubrité",
+      "option": false,
+      "html": [
+        "Vérifier les critères légaux de salubrité, suivant la liste du Gouvernement :",
+        "<ul><li>Sécurité</li><li>Absence de nuisibles</li><li>Humidité / Ventilation du logement</li><li>Équipements obligatoires</li><li>Surface des pièces</li></ul>"
+      ]
+    }
+  ],
+  "faq_titre": "Les questions courantes sur l'Audit Sécurité / Salubrité",
+  "faq": [
+    {
+      "question": "Qui réalise l'audit ?",
+      "html": [
+        "La visite sur place est réalisée par un diagnostiqueur certifié, local, qui suit une procédure spécifiquement établie pour les logements des Majeurs Protégés."
+      ]
+    },
+    {
+      "question": "Dans quels cas l'audit est pertinent ?",
+      "html": [
+        "<strong>Pour les MP propriétaires :</strong>",
+        "Lorsqu’un Majeur Protégé est propriétaire-occupant de son logement, les diagnostics immobiliers classiques ne sont pas obligatoires.",
+        "Il est donc plus courant que les équipements se dégradent ou ne soient plus aux normes.",
+        "Le propriétaire-occupant n’est pas tenu légalement de respecter les normes en vigueur.",
+        "<strong>Pour les MP locataires :</strong>",
+        "Lorsqu’un Majeur Protégé est locataire, son propriétaire est tenu de lui fournir des diagnostics immobiliers à la mise en location. Le propriétaire doit la conformité du logement.",
+        "Ce service est donc moins pertinent dans ce cas de figure. Il peut être utile pour réclamer des travaux au propriétaire, mais à notre sens il n’est pas nécessaire d’engager des frais pour faire respecter les obligations légales du propriétaire."
+      ]
+    },
+    {
+      "question": "Quels avantages ?",
+      "html": [
+        "<strong>Un logement sécuritaire et sain :</strong>",
+        "Cet audit se concentrant uniquement sur les points essentiels pour la sécurité et la salubrité, il vise à assurer un logement sain pour le Majeur Protégé.",
+        "Nous n’allons pas argumenter davantage sur la nécessité pour un être humain de vivre en sécurité dans des conditions dignes.",
+        "<strong>Pour les assurances :</strong>",
+        "En cas de sinistre, les assurances sont susceptibles de limiter une prise en charge si les obligations liées à la sécurité n’ont pas été respectées, par exemple :",
+        "<ul><li>Défaut d’entretien d’une chaudière gaz,</li><li>Défaut de ramonage des conduits,</li><li>Défaut de détecteur de fumées…</li></ul>",
+        "<strong>La responsabilité du MJPM :</strong>",
+        "L’audit permet d’obtenir une attestation, établie par un diagnostiqueur certifié, selon les normes en vigueur, qui prouve qu’il n’y a pas de sujet lié à la sécurité ou à la salubrité du logement.",
+        "<strong>Si besoin, prévoir un plan de travaux :</strong>",
+        "Si des non-conformités sont relevées, un plan de travaux peut être établi par Plateo suite à l’audit.",
+        "Il permet d’être en parfaite maîtrise du logement."
+      ]
+    },
+    {
+      "question": "Quelles sont les non-conformités courantes ?",
+      "html": [
+        "D'expérience, nous retrouvons le plus souvent les cas ci-dessous.",
+        "<strong>Dangers sur l’installation de gaz :</strong>",
+        "<ul><li>Flexible périmé</li><li>Défaut d’entretien de la chaudière</li><li>Défaut de ramonage des conduits</li></ul>",
+        "<strong>Dangers sur l’installation électrique :</strong>",
+        "<ul><li>Absence de coupure d’urgence</li><li>Absence de dispositif empêchant de se faire électrocuter (disjoncteur différentiel)</li><li>Câbles sous tension apparents</li></ul>"
+      ]
+    },
+    {
+      "question": "Combien coûte l'audit ?",
+      "html": [
+        "Cela dépend des régions et des partenaires locaux.",
+        "Toutefois, le coût de l’audit se rapproche généralement de celui des diagnostics immobiliers obligatoires avant vente ou location (DDT)."
+      ]
+    }
+  ],
+  "offres": [
+    {
+      "titre": "L'Accompagnement Travaux",
+      "texte": "Rénovation énergétique, remise en état en fin de bail ou entre 2 locataires, adaptation du logement... Tel un Maître d'Oeuvre, un accompagnement indépendant pour réduire les dépenses du Majeur Protégé.",
+      "dispo": "Service disponible sur toute la France",
+      "lien": "accompagnement-travaux-plateo",
+      "bouton": "Plus d'informations"
+    },
+    {
+      "titre": "Les dépannages courants",
+      "texte": "Robinet qui fuit, WC bouché, problème électrique, serrure à remplacer, ouverture de porte, etc. Nous proposons des prix forfaitaires.",
+      "dispo": "Service disponible sur certains départements",
+      "lien": "les-specialites#depannages",
+      "bouton": "Voir les dépannages"
+    },
+    {
+      "titre": "Les travaux sur devis",
+      "texte": "Rénovation, remise en état, adaptation de la salle de bains, jardin, peinture... Nous proposons des travaux dans toutes les spécialités.",
+      "dispo": "Service disponible sur certains départements",
+      "lien": "les-specialites",
+      "bouton": "Voir les spécialités"
+    }
+  ],
+  "cta_titre": "Un logement à vérifier ?",
+  "cta_texte": "Décrivez-nous la situation : nous organisons l'audit."
+}

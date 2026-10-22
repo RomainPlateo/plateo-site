@@ -1,0 +1,156 @@
+{
+  "slug": "accompagnement-travaux-plateo",
+  "title": "L'Accompagnement Travaux pour les MJPM et majeurs protégés | Plateo",
+  "description": "Tel un maître d'œuvre, Plateo accompagne les MJPM pour les travaux d'ampleur chez les majeurs protégés : visite, liste de travaux, devis comparables. Partout en France.",
+  "eyebrow": "Pour les MJPM et les Majeurs Protégés",
+  "h1": "L'Accompagnement Travaux",
+  "intro": [
+    "Rénovation énergétique, remise en état en fin de bail ou entre 2 locataires, adaptation du logement...",
+    "Tel un Maître d'Oeuvre, un accompagnement indépendant pour réduire les dépenses du Majeur Protégé. Pour être sûr de réaliser uniquement les travaux nécessaires."
+  ],
+  "badge": "Service disponible sur toute la France",
+  "image": "assets/img/webflow/group-8-min.webp",
+  "image_alt": "Une femme qui bénéficie d'une mesure de protection",
+  "etude_titre": "Étude technique pour les projets d'ampleur",
+  "etude_intro": "Selon les besoins et les particularités, des étapes sont proposées en option.",
+  "etapes": [
+    {
+      "titre": "La visite sur place",
+      "option": false,
+      "html": [
+        "Par un relai local, selon un protocole établi."
+      ]
+    },
+    {
+      "titre": "La liste de travaux",
+      "option": false,
+      "html": [
+        "Le livrable est un document PDF, qui cadre les prestations à réaliser.",
+        "La liste de travaux peut comprendre des arbitrages (choix de solutions techniques), par exemple :",
+        "<ul><li>Le revêtement de sol doit être remplacé ou réparé ponctuellement ?</li><li>La cuisine doit être rénovée ou conservée en l’état ?</li></ul>",
+        "Pour répondre à ces questions, il est nécessaire de connaître le coût des travaux induits. Plateo réalise donc des pré-estimations sur les postes nécessaires pour permettre au MJPM de prendre une décision en connaissance de cause."
+      ]
+    },
+    {
+      "titre": "La consultation des entreprises",
+      "option": true,
+      "html": [
+        "La liste de travaux permet d’avoir un dossier cadré et de consulter des entreprises du BTP sur les mêmes bases.",
+        "Ainsi, les devis sont comparables et le choix des prestataires est réalisé en maîtrise.",
+        "La consultation des entreprises est calquée sur le modèle des marchés publics. A ce stade, nous pouvons consulter les entreprises avec qui vous avez l’habitude de travailler."
+      ]
+    },
+    {
+      "titre": "Le suivi des travaux",
+      "option": true,
+      "html": [
+        "Cette étape commence par l’établissement du planning.",
+        "Ensuite, le relai local peut réaliser des visites de suivi pour vérifier l’avancement de ceux-ci et le respect du planning établi."
+      ]
+    },
+    {
+      "titre": "La réception des travaux",
+      "option": true,
+      "html": [
+        "Une visite finale est organisée, en présence du MJPM ou non.",
+        "La réalisation des travaux prévus dans les devis est vérifiée.",
+        "Des photos des travaux réalisés sont prises. La liste de travaux est mise à jour pour assurer un suivi complet des travaux réalisés."
+      ]
+    }
+  ],
+  "faq_titre": "Les questions courantes sur l'Accompagnement Travaux",
+  "faq": [
+    {
+      "question": "Dans quels cas l'Accompagnement Travaux est pertinent ?",
+      "html": [
+        "<strong>Majeur Protégé propriétaire :</strong>",
+        "<ul><li>Obtenir les aides financières pour la rénovation (Ma Prime Rénov’, Ma Prime Adapt’...)</li><li>Entre 2 locataires, différencier les travaux nécessaires à la charge du MP et ceux à la charge du locataire partant</li><li>Savoir s’il est préférable de rénover le logement pour le louer ou de le vendre</li></ul>",
+        "<strong>Majeur Protégé locataire :</strong>",
+        "Lorsqu’une remise en état est nécessaire en fin de bail :",
+        "<ul><li>Différencier les travaux à la charge du MP et ceux à la charge du propriétaire</li><li>Éviter les abus des propriétaires sous prétexte que le logement est dégradé</li></ul>",
+        "<strong>Majeur Protégé nu-propriétaire :</strong>",
+        "<ul><li>Engager uniquement les travaux à la charge du nu-propriétaire et pas de l’usufruitier</li></ul>",
+        "<strong>Majeur Protégé demandeur de travaux :</strong>",
+        "Il est parfois compliqué de cerner l’ampleur des travaux :",
+        "<ul><li>Connaître le budget à prévoir</li><li>Prioriser les travaux</li></ul>"
+      ]
+    },
+    {
+      "question": "Quels avantages ?",
+      "html": [
+        "<strong>Profiter d’un accompagnement indépendant :</strong>",
+        "Nous étudions les solutions techniques sans préférence ni parti-pris. Nous oeuvrons uniquement dans l’intérêt des Majeurs Protégés, en vous informant en toute transparence.",
+        "Pour garantir l’indépendance de Plateo, nous ne sommes pas rémunérés par les artisans mais par les Majeurs Protégés.",
+        "<strong>Réduire les dépenses du Majeur Protégé :</strong>",
+        "Notre but est de réaliser uniquement les travaux nécessaires.",
+        "Nous bâtissons un service de confiance pour offrir des prestations exemplaires, du début à la fin. Avec Plateo, bénéficiez d'un partenaire fiable qui prend à cœur le respect des Majeurs Protégés.",
+        "<strong>Un appui pour le choix des prestations :</strong>",
+        "La liste de travaux peut comprendre des arbitrages (choix de solutions techniques), par exemple :",
+        "<ul><li>Le revêtement de sol doit être remplacé ou réparé ponctuellement ?</li><li>La cuisine doit être rénovée ou conservée en l’état ?</li></ul>",
+        "Pour répondre à ces questions, il est nécessaire de connaître le coût des travaux induits. Plateo réalise donc des pré-estimations sur les postes nécessaires pour permettre au MJPM de prendre une décision en connaissance de cause.",
+        "<strong>Obtenir des devis uniformes :</strong>",
+        "La liste de travaux permet d’avoir un dossier cadré et de consulter des entreprises du BTP sur les mêmes bases.",
+        "Ainsi, les devis sont comparables et le choix des prestataires est réalisé en maîtrise.",
+        "La consultation des entreprises est calquée sur le modèle des marchés publics. A ce stade, nous pouvons consulter les entreprises avec qui vous avez l’habitude de travailler."
+      ]
+    },
+    {
+      "question": "Quelles différences avec des artisans en direct ?",
+      "html": [
+        "<strong>Des rôles complémentaires :</strong>",
+        "Les artisans réalisent les travaux. Plateo étudie les travaux, pour qu’ils soient réalisés par des artisans.",
+        "<strong>Des documents pour justifier la réalisation des travaux :</strong>",
+        "L’Accompagnement Travaux comprend la rédaction d’un document PDF, la liste de travaux.",
+        "Celle-ci reprend toutes les observations faites lors de la visite sur place, avec des commentaires.",
+        "Nous ne prenons pas de décision à la place du MJPM, la liste des travaux comprend souvent des arbitrages et sert de base de discussion pour ceux-ci.",
+        "En fin de chantier, la liste des travaux est mise à jour pour une traçabilité complète (en option).",
+        "<strong>Profiter d’un accompagnement indépendant :</strong>",
+        "Nous étudions les solutions techniques sans préférence ni parti-pris : Plateo n’est pas rémunéré par les artisans.",
+        "<strong>Les spécialités :</strong>",
+        "Un “homme à tout faire” au sens premier est un bon bricoleur. Il n’est pas tout le temps expert dans toutes les spécialités.",
+        "Dans ce cas, son travail doit être complété par des experts, que Plateo identifie et mobilise.",
+        "Idem pour les artisans au sens large, l’Accompagnement Travaux est complémentaire à leurs expertises."
+      ]
+    },
+    {
+      "question": "Comment réalisez vous ces prestations à distance ?",
+      "html": [
+        "L’Accompagnement Travaux est proposé sur TOUTE la France !",
+        "Pour chaque dossier, nous nous appuyons sur des relais locaux pour la visite sur place et le suivi des travaux.",
+        "Généralement, il s’agit de diagnostiqueurs certifiés ou de techniciens du BTP. Selon les localisations, il nous arrive de collaborer avec des métreurs indépendants.",
+        "Dans tous les cas, que la visite soit réalisée par nos soins ou par des partenaires, les informations relevées sont identiques.",
+        "Nous n’avons pas inventé ce fonctionnement ! Dans un dossier de Maîtrise d’Oeuvre “classique”, le fonctionnement est similaire : les relevés sont réalisés par l’architecte et les études techniques réalisées par le bureau d’études."
+      ]
+    }
+  ],
+  "offres": [
+    {
+      "titre": "L'Audit Sécurité / Salubrité",
+      "texte": "Un audit du logement pour vérifier uniquement la sécurité et la salubrité. Pour maîtriser la situation et protéger la responsabilité du MJPM.",
+      "dispo": "Service disponible sur toute la France",
+      "lien": "audit-securite-salubrite",
+      "bouton": "Plus d'informations"
+    },
+    {
+      "titre": "Les dépannages courants",
+      "texte": "Robinet qui fuit, WC bouché, problème électrique, serrure à remplacer, ouverture de porte, etc. Nous proposons des prix forfaitaires.",
+      "dispo": "Service disponible sur certains départements",
+      "lien": "les-specialites#depannages",
+      "bouton": "Voir les dépannages"
+    },
+    {
+      "titre": "Les travaux sur devis",
+      "texte": "Rénovation, remise en état, adaptation de la salle de bains, jardin, peinture... Nous proposons des travaux dans toutes les spécialités.",
+      "dispo": "Service disponible sur certains départements",
+      "lien": "les-specialites",
+      "bouton": "Voir les spécialités"
+    }
+  ],
+  "nom": "L'Accompagnement Travaux",
+  "service_type": "Maîtrise d'œuvre et Accompagnement Travaux pour majeurs protégés",
+  "howto": true,
+  "cta_bouton": "Se faire accompagner",
+  "deroule_eyebrow": "Le déroulé",
+  "cta_titre": "Un projet de travaux chez un bénéficiaire ?",
+  "cta_texte": "Décrivez-nous le besoin : nous étudierons les solutions possibles."
+}

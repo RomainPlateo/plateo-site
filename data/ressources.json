@@ -1,0 +1,73 @@
+{
+  "slug": "ressources",
+  "title": "Livres blancs pour les MJPM : travaux chez les majeurs protégés | Plateo",
+  "description": "Téléchargez gratuitement les livres blancs Plateo pour les MJPM : urgences, logement décent, propriétaire/locataire, conformité administrative des travaux.",
+  "h1": "Les livres blancs pour les MJPM",
+  "intro": [
+    "Des guides pratiques et gratuits sur la gestion des travaux chez les Majeurs Protégés, rédigés par l'équipe Plateo à partir de son expérience du terrain."
+  ],
+  "formulaire": {
+    "service": "web3forms",
+    "cle": "f823a3dc-d655-464b-8863-87d89da47e17",
+    "objet": "Nouvelle demande de livre blanc – site Plateo",
+    "structures": [
+      "Association tutélaire",
+      "MJPM indépendant",
+      "Préposé d'établissement",
+      "Autre"
+    ],
+    "succes": "Merci ! Vous allez recevoir le livre blanc dans votre boîte mail.",
+    "erreur": "Oups ! Quelque chose s'est mal passé, merci de renvoyer votre demande.",
+    "confidentialite": "Nous nous soucions de votre vie privée, votre e-mail ne sera jamais diffusé."
+  },
+  "livres": [
+    {
+      "id": "lb4",
+      "numero": 4,
+      "titre": "Gérer les urgences ?",
+      "pages": 9,
+      "points": [
+        "Identifier la situation",
+        "Gérer efficacement une urgence",
+        "Protéger le Majeur, son logement et les partenaires impliqués"
+      ],
+      "couverture": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/68ef4811d29a62505ff1a41c_Livre%20blanc%204%20-%20Les%20urgences.png"
+    },
+    {
+      "id": "lb3",
+      "numero": 3,
+      "titre": "Logement sécurisé et décent ?",
+      "pages": 9,
+      "points": [
+        "Sécuriser un logement sans tout rénover à neuf",
+        "Vérifier la décence d'un logement",
+        "Savoir quoi faire en cas de logement non-décent"
+      ],
+      "couverture": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/68663107dbdeb588e00d6157_Capture%20d%E2%80%99e%CC%81cran%202025-07-01%20a%CC%80%2019.57.34-min.png"
+    },
+    {
+      "id": "lb2",
+      "numero": 2,
+      "titre": "Propriétaire/Locataire : qui paie quoi ?",
+      "pages": 13,
+      "points": [
+        "Connaître les obligations de propriétaire et des locataires",
+        "Différencier les travaux à la charge de chaque partie",
+        "Savoir quoi faire en cas de litige"
+      ],
+      "couverture": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/68024fea2526e27362e08b5b_Livre%20blanc%20MJPM%20%232-min.png"
+    },
+    {
+      "id": "lb1",
+      "numero": 1,
+      "titre": "Comment être en conformité administrative ?",
+      "pages": 10,
+      "points": [
+        "Vérifier que le taux de TVA est adapté",
+        "Vérifier que les artisans sont bien assurés",
+        "Vérifier que les devis et factures sont conformes"
+      ],
+      "couverture": "https://cdn.prod.website-files.com/63a160fcd6b22947194ebe90/67d3ed6e8425ac727222956f_Livre%20blanc%20MJPM%20%231.jpeg"
+    }
+  ]
+}
