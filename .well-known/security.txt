@@ -1,0 +1,4 @@
+Contact: mailto:contact@plateo.fr
+Expires: 2027-10-26T00:00:00.000Z
+Preferred-Languages: fr, en
+Canonical: https://www.plateo.fr/.well-known/security.txt

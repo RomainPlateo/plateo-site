@@ -29,7 +29,13 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://www.plateo.fr/"
 TALLY = "https://tally.so/r/3y695p"
 TPL = ROOT / "templates"
-MAJ_MENTIONS = "2026-10-22"  # date de dernière mise à jour des mentions légales
+MAJ_MENTIONS = "2026-10-22"
+
+# Politique de sécurité du contenu : seules ces sources peuvent être chargées par les pages.
+# Si tu ajoutes un outil externe (statistiques, vidéo…), il faut l'autoriser ici.
+CSP_META = """  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; img-src 'self' data: https://cdn.prod.website-files.com https://uploads-ssl.webflow.com https://assets-global.website-files.com; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+"""  # date de dernière mise à jour des mentions légales
 e = lambda t: html.escape(t, quote=False)
 ea = lambda t: html.escape(t, quote=True)
 
@@ -77,7 +83,7 @@ def head(title, description, url, root, ld):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{e(title)}</title>
+{CSP_META}  <title>{e(title)}</title>
   <meta name="description" content="{ea(description)}">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="{url}">
@@ -1432,7 +1438,7 @@ def page_projet(r, reals, metiers):
     return head(f"{r['titre']} – Réalisation | Plateo", desc, url, root, ld) + body + foot(root)
 
 
-def page_renvoi(cible, nom):
+def page_renvoi(cible, nom, prefixe="../"):
     """Page de renvoi pour une ancienne adresse (équivalent d'une redirection 301)."""
     return f'''<!doctype html>
 <html lang="fr">
@@ -1440,11 +1446,70 @@ def page_renvoi(cible, nom):
   <meta charset="utf-8">
   <title>{e(nom)} – Plateo</title>
   <link rel="canonical" href="{SITE + cible.split('#')[0]}">
-  <meta http-equiv="refresh" content="0; url=../{cible}">
-  <script>location.replace("../{cible}");</script>
+  <meta http-equiv="refresh" content="0; url={prefixe}{cible}">
+  <script>location.replace("{prefixe}{cible}");</script>
 </head>
 <body>
-  <p>Cette page a été déplacée : <a href="../{cible}">{e(nom)}</a>.</p>
+  <p>Cette page a été déplacée : <a href="{prefixe}{cible}">{e(nom)}</a>.</p>
+</body>
+</html>
+'''
+
+
+# Anciennes adresses Webflow sans équivalent direct : renvoi vers la page la plus proche
+RENVOIS = {
+    "groupes-de-travail": ("media/", "Le média"),
+    "groupe-de-travail/comment-gerer-un-degat-des-eaux": ("media/comment-gerer-un-degat-des-eaux-dans-le-logement-dun-majeur-protege", "Comment gérer un dégât des eaux ?"),
+    "groupe-de-travail/le-contrat-dentretien-des-chaudieres-gaz": ("media/est-ce-quun-contrat-dentretien-est-obligatoire-pour-une-chaudiere-a-gaz", "Le contrat d'entretien des chaudières gaz"),
+    "search": ("media/", "Le média"),
+    "blog-author/malaika-h": ("media/", "Le média"),
+    "blog-author/nathalie-p": ("media/", "Le média"),
+    "blog-author/raphael-w": ("a-propos#equipe", "Notre équipe"),
+    "blog-author/romain-cordier": ("a-propos#equipe", "Notre équipe"),
+    "template/changelog": ("./", "Accueil"),
+    "template/licence": ("./", "Accueil"),
+    "template/style-guide": ("./", "Accueil"),
+    # Redirections 301 configurées dans Webflow
+    "media-copy": ("ressources", "Ressources"),
+    "service-plateo": ("accompagnement-travaux-plateo", "L'Accompagnement Travaux"),
+    "services-plateo": ("accompagnement-travaux-plateo", "L'Accompagnement Travaux"),
+    "contact-travail": ("contact", "Contact"),
+    "blog-travail": ("media/", "Le média"),
+    "blog/index": ("media/", "Le média"),  # /blog (dossier, car d'anciennes adresses /blog/... existent)
+    "blog/depannage-reparation/deboucher-ses-canalisations-avec-des-produits-ecologiques": ("media/deboucher-ses-canalisations-avec-des-produits-ecologiques", "Déboucher ses canalisations avec des produits écologiques"),
+    "contact-v2": ("contact", "Contact"),
+    "untitled": ("mentions-legales", "Mentions légales"),
+    "presentation": ("a-propos", "À propos"),
+    "projects/index": ("projets", "Réalisations"),  # /projects (dossier des fiches) -> /projets
+}
+
+
+def page_404():
+    """Page d'erreur servie par GitHub Pages ; liens absolus car elle s'affiche à n'importe quelle adresse."""
+    return f'''<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable | Plateo</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<main class="hero page-hero" style="min-height:100vh;display:flex;align-items:center">
+  <div class="container page-hero-text">
+    <a href="/"><img src="/assets/img/Plateo_logo_principale_dark.png" alt="Plateo." width="160" height="61" style="margin-bottom:40px"></a>
+    <h1>Cette page est introuvable</h1>
+    <p class="lead">Elle a peut-être été déplacée ou supprimée. Voici quelques pistes pour retrouver ce que vous cherchez :</p>
+    <div class="btn-row">
+      <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+      <a href="/les-specialites" class="btn btn-ghost">Nos spécialités</a>
+      <a href="/media/" class="btn btn-ghost">Le média</a>
+      <a href="/contact" class="btn btn-ghost">Nous contacter</a>
+    </div>
+  </div>
+</main>
 </body>
 </html>
 '''
@@ -1520,6 +1585,13 @@ def main():
     (ROOT / "contact.html").write_text(page_contact(rs["formulaire"]), encoding="utf-8")
     (ROOT / "mentions-legales.html").write_text(page_mentions(), encoding="utf-8")
     print("✓ contact.html, mentions-legales.html")
+
+    for ancien, (cible, nom) in RENVOIS.items():
+        f = ROOT / f"{ancien}.html"
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_text(page_renvoi(cible, nom, "../" * ancien.count("/")), encoding="utf-8")
+    (ROOT / "404.html").write_text(page_404(), encoding="utf-8")
+    print(f"✓ {len(RENVOIS)} anciennes adresses Webflow renvoyées, 404.html")
 
     update_sitemap([SITE, SITE + d["page"]["slug"], *piliers, SITE + ap["slug"], SITE + rs["slug"], SITE + "contact", SITE + "mentions-legales", SITE + "projets", SITE + md["page"]["slug"] + "/"]
                    + [(f"{SITE}projects/{r['slug']}", r.get("date")) for r in reals if not r.get("masquer")]

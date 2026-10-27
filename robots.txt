@@ -3,5 +3,10 @@
 # (Googlebot, Bingbot, GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, Google-Extended…).
 User-agent: *
 Allow: /
+# Fichiers techniques du projet (non destinés aux visiteurs)
+Disallow: /README.md
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /templates/
 
 Sitemap: https://www.plateo.fr/sitemap.xml
