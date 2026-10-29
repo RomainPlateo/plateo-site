@@ -585,6 +585,35 @@ def texte_brut(items):
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", x)) for x in items).replace("  ", " ").strip()
 
 
+def niveaux_titres(corps):
+    """Remet les intertitres d'un article dans l'ordre (h2, puis h3…) sans sauter de niveau."""
+    precedent = 1
+
+    def remplacer(m):
+        nonlocal precedent
+        niveau = max(2, min(int(m.group(1)), precedent + 1))
+        precedent = niveau
+        return f"<h{niveau}{m.group(2)}>{m.group(3)}</h{niveau}>"
+
+    return re.sub(r"<h([2-6])(\b[^>]*)>(.*?)</h\1>", remplacer, corps, flags=re.S)
+
+
+def couper(t, n=157):
+    """Coupe un texte à n caractères maximum, sur un mot entier."""
+    t = re.sub(r"\s+", " ", t).strip()
+    return t if len(t) <= n else t[:n].rsplit(" ", 1)[0].rstrip(" ,;:–-") + "…"
+
+
+def meta_description(resume, corps):
+    """Description pour Google : 70 à 160 caractères, complétée par le début de l'article si besoin."""
+    resume = re.sub(r"\s+", " ", resume).strip()
+    if len(resume) >= 70:
+        return couper(resume)
+    debut = texte_brut([corps])
+    base = (resume.rstrip(".!?…") + ". " if resume else "") + debut
+    return couper(base)
+
+
 def page_pilier(d, pourquoi_items):
     """Page de service principal (Accompagnement Travaux, Audit Sécurité / Salubrité)."""
     root = ""
@@ -906,9 +935,11 @@ def page_article(a, tous):
     root = "../"
     url = f"{SITE}media/{a['slug']}"
     corps = (ROOT / "data" / "articles" / f"{a['slug']}.html").read_text(encoding="utf-8").replace("{{root}}", root)
+    corps = niveaux_titres(corps)
     mots = len(re.sub(r"<[^>]+>", " ", corps).split())
     lecture = max(1, round(mots / 200))
     resume = a.get("resume") or texte_brut([corps])[:155].rsplit(" ", 1)[0] + "…"
+    meta_desc = meta_description(a.get("resume") or "", corps)
     titre, texte, lien, bouton = CTA_ARTICLE.get(a["categorie"], CTA_DEFAUT)
 
     autres = [x for x in tous if x["slug"] != a["slug"] and not x.get("masquer")]
@@ -1014,7 +1045,7 @@ def page_article(a, tous):
 
 </main>
 '''
-    return head(f"{a['titre']} | Plateo", resume, url, root, ld) + body + foot(root)
+    return head(f"{a['titre']} | Plateo", meta_desc, url, root, ld) + body + foot(root)
 
 
 def page_ressources(d):
@@ -1373,7 +1404,17 @@ def page_projet(r, reals, metiers):
     autres = [x for x in reals if x["slug"] != r["slug"] and not x.get("masquer")]
     lies = ([x for x in autres if x["specialite"] == r["specialite"]] + [x for x in autres if x["specialite"] != r["specialite"]])[:4]
     cartes = "\n".join(carte_projet(x, root, metiers) for x in lies)
-    desc = f"{r['titre']} : {texte or intro} Plateo coordonne les travaux chez les majeurs protégés pour les MJPM."[:158]
+    desc = couper(f"{r['titre']} : {texte or intro} Plateo coordonne les travaux chez les majeurs protégés pour les MJPM.")
+    # Plusieurs chantiers portent le même nom : on les distingue par le client et l'année
+    homonymes = [x for x in reals if x["titre"] == r["titre"] and not x.get("masquer")]
+    titre_page = r["titre"]
+    if len(homonymes) > 1:
+        precision = ", ".join(filter(None, [r.get("client"), (r.get("date") or "")[:4]]))
+        if sum(1 for x in homonymes if x.get("client") == r.get("client")
+               and (x.get("date") or "")[:4] == (r.get("date") or "")[:4]) > 1:
+            precision += f", n° {homonymes.index(r) + 1}"
+        titre_page = f"{r['titre']} ({precision})"
+        desc = couper(f"{r['titre']} ({precision}) : {texte or intro} Plateo coordonne les travaux chez les majeurs protégés.")
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CreativeWork", "@id": url + "#realisation", "url": url, "name": r["titre"], "inLanguage": "fr-FR",
          "description": texte or intro, **({"image": r["image"]} if r.get("image") else {}),
@@ -1435,7 +1476,7 @@ def page_projet(r, reals, metiers):
 
 </main>
 '''
-    return head(f"{r['titre']} – Réalisation | Plateo", desc, url, root, ld) + body + foot(root)
+    return head(f"{titre_page} – Réalisation | Plateo", desc, url, root, ld) + body + foot(root)
 
 
 def page_renvoi(cible, nom, prefixe="../"):
