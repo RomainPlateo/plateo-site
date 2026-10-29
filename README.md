@@ -1,6 +1,6 @@
 # Site Plateo — version code (HTML / CSS / JS)
 
-Reconstruction de www.plateo.fr (Webflow) en code pur, sans framework ni dépendance,
+Site www.plateo.fr en code pur, sans framework ni dépendance,
 aux couleurs de la charte Plateo (Dark blue, Optimistic blue, police Outfit).
 
 ## Contenu
@@ -92,39 +92,24 @@ Le formulaire envoie les demandes par mail via Web3Forms (gratuit, 250 demandes/
 
 Cette clé n'est pas secrète : elle est faite pour être visible dans la page.
 
-## Avant de résilier Webflow
+## Images
 
-Les illustrations, photos d'équipe et logos partenaires pointent encore vers le CDN
-Webflow. Lance une fois :
+Toutes les images sont hébergées sur le site, au format WebP (`assets/img/`).
+Les images reprises de l'ancien site sont dans `assets/img/webflow/`, avec leur
+correspondance dans `correspondances.json` (utilisée par `scripts/build.py`).
 
-```
-python3 scripts/rapatrier-images.py
-```
-Le script télécharge tout dans `assets/img/webflow/` et met les liens à jour.
-
-## Illustrations « Ils parlent de nous »
-
-Les cartes presse affichent une illustration si le fichier existe dans
-`assets/img/presse/` (ex. `bfm-marseille.jpg`), sinon une carte texte.
-Pour récupérer les 13 illustrations du site Webflow : voir le mode d'emploi
-en haut de `scripts/recuperer-presse.js`.
+Si une nouvelle page contient une image hébergée ailleurs, la politique de sécurité
+du site la bloquera : il faut d'abord la copier dans `assets/img/`.
 
 ## Mettre en ligne
 
-Le dossier est 100 % statique : il se dépose tel quel sur GitHub Pages, Netlify,
-Vercel, OVH, o2switch… (aucune compilation).
+Le dossier est 100 % statique et hébergé sur GitHub Pages (domaine www.plateo.fr,
+fichier `CNAME`). Après une modification : `python3 scripts/build.py`, puis Commit
+et Push dans GitHub Desktop.
 
-## Pages restant à créer
+Ne pas supprimer les fichiers cachés `.nojekyll`, `CNAME` et `.well-known/`.
 
-Les liens internes sont déjà en place et pointent vers :
-`a-propos.html`, `accompagnement-travaux.html`, `audit-securite-salubrite.html`,
-`projets.html`, `media.html`, `ressources.html`, `contact.html`, `mentions-legales.html`,
-`services/*.html` (6 pages) et `media/*.html` (articles).
+## Anciennes adresses
 
-Les formulaires restent sur Tally (https://tally.so/r/3y695p).
-
-## Points d'attention
-
-- Les URL changent (ex. `/a-propos` → `/a-propos.html`). Pour garder le référencement,
-  prévoir des redirections 301 chez l'hébergeur, ou passer en dossiers
-  (`a-propos/index.html`) pour conserver les URL actuelles.
+Les anciennes adresses du site sont conservées : chaque ancienne page renvoie vers
+la nouvelle (liste `RENVOIS` dans `scripts/build.py`).

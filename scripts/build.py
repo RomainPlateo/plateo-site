@@ -33,7 +33,7 @@ MAJ_MENTIONS = "2026-10-22"
 
 # Politique de sécurité du contenu : seules ces sources peuvent être chargées par les pages.
 # Si tu ajoutes un outil externe (statistiques, vidéo…), il faut l'autoriser ici.
-CSP_META = """  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; img-src 'self' data: https://cdn.prod.website-files.com https://uploads-ssl.webflow.com https://assets-global.website-files.com; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+CSP_META = """  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 """  # date de dernière mise à jour des mentions légales
 e = lambda t: html.escape(t, quote=False)
