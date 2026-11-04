@@ -29,7 +29,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://www.plateo.fr/"
 TALLY = "https://tally.so/r/3y695p"
 TPL = ROOT / "templates"
-MAJ_MENTIONS = "2026-10-22"
+MAJ_MENTIONS = "2026-11-04"
 
 # Politique de sécurité du contenu : seules ces sources peuvent être chargées par les pages.
 # Si tu ajoutes un outil externe (statistiques, vidéo…), il faut l'autoriser ici.
@@ -63,6 +63,45 @@ def sync_index():
         a = s.index(start)
         b = s.index(end, a) + len(end)
         s = s[:a] + partial(name, "", accueil=True).rstrip("\n") + s[b:]
+    p.write_text(s, encoding="utf-8")
+
+
+POPUP_DEBUT = "<!-- ============ FENÊTRE LIVRE BLANC ============ -->"
+POPUP_FIN = "<!-- ============ /FENÊTRE LIVRE BLANC ============ -->"
+
+
+def sync_index_popup(res):
+    """Fenêtre « livre blanc » de l'accueil : un des livres blancs, qui change à chaque visite.
+    Les vignettes sont dans assets/img/livres/<id>.webp (240 px de large)."""
+    items = []
+    for l in res["livres"]:
+        points = "".join(f"<li>{e(p)}</li>" for p in l["points"][:2])
+        items.append(f'''    <div class="lb-pop-item" data-lb-item hidden>
+      <img class="lb-pop-cover" src="assets/img/livres/{l['id']}.webp" alt="Couverture du livre blanc n°{l['numero']}" width="240" height="339" loading="lazy">
+      <div class="lb-pop-body">
+        <p class="lb-pop-kicker">Livre blanc gratuit #{l['numero']} · {l['pages']} pages</p>
+        <p class="lb-pop-title">{e(l['titre'])}</p>
+        <ul class="lb-pop-points">{points}</ul>
+        <a class="btn btn-primary btn-sm" href="ressources?livre={l['id']}#formulaire" data-lb-cta>Recevoir le livre blanc</a>
+      </div>
+    </div>''')
+    bloc = f'''{POPUP_DEBUT}
+<aside class="lb-pop" aria-label="Livre blanc gratuit pour les MJPM" data-lb-pop hidden>
+  <button class="lb-pop-close" type="button" aria-label="Fermer" data-lb-close>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+{chr(10).join(items)}
+</aside>
+{POPUP_FIN}'''
+    p = ROOT / "index.html"
+    s = p.read_text(encoding="utf-8")
+    if POPUP_DEBUT in s:
+        a = s.index(POPUP_DEBUT)
+        b = s.index(POPUP_FIN, a) + len(POPUP_FIN)
+        s = s[:a] + bloc + s[b:]
+    else:
+        a = s.index('<script src="js/main.js"')
+        s = s[:a] + bloc + "\n\n" + s[a:]
     p.write_text(s, encoding="utf-8")
 
 
@@ -1571,6 +1610,7 @@ def main():
     d = json.loads((ROOT / "data" / "travaux.json").read_text(encoding="utf-8"))
     sync_index()
     sync_index_faq(faq_data())
+    sync_index_popup(json.loads((ROOT / "data" / "ressources.json").read_text(encoding="utf-8")))
     print("✓ index.html (menu, pied de page et FAQ synchronisés)")
 
     out = ROOT / f"{d['page']['slug']}.html"

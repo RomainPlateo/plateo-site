@@ -230,6 +230,63 @@
     });
   });
 
+  /* ---------- Ressources : livre blanc présélectionné (lien ressources?livre=lb3) ---------- */
+  var livreDemande = new URLSearchParams(window.location.search).get('livre');
+  if (livreDemande) {
+    var caseLivre = document.querySelector('input[data-book="' + livreDemande.replace(/[^a-z0-9-]/gi, '') + '"]');
+    if (caseLivre) caseLivre.checked = true;
+  }
+
+  /* ---------- Accueil : fenêtre « livre blanc » ----------
+     - apparaît quand on a descendu un peu la page, une seule fois par visite ;
+     - présente un livre blanc différent à chaque visite ;
+     - ne revient pas pendant 7 jours si on la ferme ou si on clique. */
+  var pop = document.querySelector('[data-lb-pop]');
+  if (pop) {
+    var lire = function (store, cle) { try { return window[store].getItem(cle); } catch (err) { return null; } };
+    var ecrire = function (store, cle, val) { try { window[store].setItem(cle, val); } catch (err) { /* stockage indisponible */ } };
+    var SEPT_JOURS = 7 * 24 * 3600 * 1000;
+    var ferme = parseInt(lire('localStorage', 'plateo-lb-ferme') || '0', 10);
+    var dejaVue = lire('sessionStorage', 'plateo-lb-vue');
+
+    if (Date.now() - ferme > SEPT_JOURS && !dejaVue) {
+      var items = pop.querySelectorAll('[data-lb-item]');
+      var idx = lire('sessionStorage', 'plateo-lb-idx');
+      if (idx === null) {
+        var visites = parseInt(lire('localStorage', 'plateo-lb-visites') || '-1', 10) + 1;
+        if (isNaN(visites)) visites = Math.floor(Math.random() * items.length);
+        ecrire('localStorage', 'plateo-lb-visites', String(visites));
+        idx = String(visites % items.length);
+        ecrire('sessionStorage', 'plateo-lb-idx', idx);
+      }
+      var item = items[parseInt(idx, 10) % items.length];
+      if (item) item.hidden = false;
+
+      var ouvrir = function () {
+        if (window.scrollY < window.innerHeight * 0.9) return;
+        window.removeEventListener('scroll', ouvrir);
+        ecrire('sessionStorage', 'plateo-lb-vue', '1');
+        pop.hidden = false;
+        window.requestAnimationFrame(function () {
+          window.requestAnimationFrame(function () { pop.classList.add('is-open'); });
+        });
+      };
+      var fermer = function () {
+        ecrire('localStorage', 'plateo-lb-ferme', String(Date.now()));
+        pop.classList.remove('is-open');
+        window.setTimeout(function () { pop.hidden = true; }, 350);
+      };
+      window.addEventListener('scroll', ouvrir, { passive: true });
+      pop.querySelector('[data-lb-close]').addEventListener('click', fermer);
+      pop.querySelectorAll('[data-lb-cta]').forEach(function (a) {
+        a.addEventListener('click', function () { ecrire('localStorage', 'plateo-lb-ferme', String(Date.now())); });
+      });
+      document.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Escape' && !pop.hidden) fermer();
+      });
+    }
+  }
+
   /* ---------- Année du copyright ---------- */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = new Date().getFullYear();
